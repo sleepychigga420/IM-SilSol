@@ -54,13 +54,17 @@ header .container {
 }
 
 .hero {
-    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
     color: #fff;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
     text-align: center;
+}
+
+
+.hero-content {
+    display: flex;
 }
 
 .hero-content h2 {
