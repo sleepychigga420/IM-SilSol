@@ -153,3 +153,12 @@ header .container {
     max-width: 100%;
     border-radius: 10px;
 }
+
+.form-container {
+    margin:auto;
+    width:400px;
+  }
+
+.form-container input, .form-container textarea {
+    width: 100%;
+}
