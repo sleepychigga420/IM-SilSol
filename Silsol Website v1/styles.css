@@ -57,10 +57,31 @@ header .container {
     background:url('img/background-1.jpg') no-repeat center center/cover;
     color: #fff;
     height: 100vh;
-    display: flex;
+    /*display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center;*/
+}
+
+.hero-content {
+    display: flex;
+    width:700px;
+    margin:auto;
+}
+
+#home{
+    padding-top: 40px;
+}
+
+.hero-text{
+    flex:2;
+}
+.hero-picture{
+    flex:1;
+}
+
+.hero-picture img{
+    width:200px;
 }
 
 .hero-content h2 {
