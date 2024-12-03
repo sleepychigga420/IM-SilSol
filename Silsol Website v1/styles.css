@@ -195,3 +195,20 @@ header .container {
 .form-container input, .form-container textarea {
     width: 100%;
 }
+/*SilverRailApp*/
+.appdownload h2 {
+    font-size: 64px;
+}
+
+.appdownload_platform {
+    display: flex;
+    justify-content: space-between;
+}
+
+.appdownload_platform img {
+    width: 30vw;
+}
+
+.appdownload_platform p {
+    font-size: 36px;
+}
