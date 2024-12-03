@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background: #89939E;
+    background: #8ab0db;
     color: #fff;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -148,4 +148,13 @@ header .container {
 .text-image .image img {
     max-width: 100%;
     border-radius: 10px;
+}
+
+.form-container {
+    margin:auto;
+    width:400px;
+  }
+
+.form-container input, .form-container textarea {
+    width: 100%;
 }
