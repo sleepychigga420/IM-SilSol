@@ -101,6 +101,7 @@ header .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    text-align: center;
 }
 
 .three-column h2, .four-column h2, .client-review h2, .text-image h2 {
