@@ -30,10 +30,6 @@
                 <div class="text">
                     <h2>Haben Sie ein Anliegen?</h2>
                     <p style="text-align: center">Wir helfen Ihnen gerne weiter.</p>
-                    <a href="#about" class="btn">Learn More</a>
-                </div>
-                <div class="image">
-                    <img src="https://via.placeholder.com/600x400" alt="SilSol Team">
                 </div>
             </div>
         </div>
@@ -42,25 +38,26 @@
     <section>
         <body>
             <h3>Wie können wir helfen?</h3>
-            <form>
+            <form class="form-container">
                     <label for="Name">Name</label>
                     <div>
-                        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                        <input type="text" id="Name" name="Name" required>
                     </div>
                 <div>
                     <label for="Email">Email</label>
                     <div>
-                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                        <input type="email" id="Email" name="Email" required>
                     </div>
                 <div>
                     <label for="Message">Ihr Anliegen</label>
                     <div>
-                        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                        <textarea id="Message" name="Message" maxlength="3000" required></textarea>
                     </div>
                 </div>
                 <div>
-                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+                    <button type="submit">Senden</button>
                 </div>
+            </form>
         </body>
     </section>
 
