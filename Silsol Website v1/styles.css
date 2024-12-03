@@ -69,7 +69,7 @@ header .container {
     margin:auto;
 }
 
-#home{
+.home{
     padding-top: 40px;
 }
 
@@ -90,19 +90,35 @@ header .container {
 
 }
 
+
+.cta {
+    display: flex:
+    justify-content: center;
+    align-item: center;
+    padding: 70px;
+}
+
+
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
 .btn {
-    padding: 10px 20px;
+    padding: 20px 20px;
     background: #8ab0db;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
     transition: background 0.3s ease;
+}
+
+
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn:hover {
