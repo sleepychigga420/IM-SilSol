@@ -13,7 +13,11 @@ body {
 }
 
 header {
+<<<<<<< Updated upstream
     background: #89939E;
+=======
+    background: #8ab0db;
+>>>>>>> Stashed changes
     color: #fff;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -54,7 +58,7 @@ header .container {
 }
 
 .hero {
-    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    background:url('img/background-1.jpg') no-repeat center center/cover;
     color: #fff;
     height: 100vh;
     display: flex;
@@ -66,6 +70,7 @@ header .container {
 .hero-content h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
+
 }
 
 .hero-content p {
@@ -75,7 +80,7 @@ header .container {
 
 .btn {
     padding: 10px 20px;
-    background: #e67e22;
+    background: #8ab0db;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
