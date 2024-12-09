@@ -1,0 +1,153 @@
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif; /* Schriftart für die gesamte Seite */
+    margin: 0; /* Entfernt Standardabstände */
+    padding: 0; /* Entfernt Standardabstände */
+    box-sizing: border-box; /* Sorgt für konsistente Größenberechnung */
+    background-color: #f4f4f4; /* Hintergrundfarbe der Seite */
+    background-image: url('background.jpg'); /* Hintergrundbild */
+    background-size: cover; /* Bild skaliert auf gesamten Bildschirm */
+    background-position: center; /* Hintergrundbild zentrieren */
+    background-attachment: fixed; /* Hintergrund bleibt beim Scrollen */
+}
+
+/* Header Styling */
+header {
+    background-color: #8CA4BC; /* Hauptfarbe des Headers */
+    color: white; /* Schriftfarbe im Header */
+    padding: 10px 20px; /* Abstand im Header */
+    display: flex; /* Flexbox für Layout */
+    justify-content: space-between; /* Platz zwischen Logo und Navigation */
+    align-items: center; /* Vertikale Ausrichtung */
+    position: sticky; /* Fixiert Header beim Scrollen */
+    top: 0; /* Oben auf der Seite */
+    z-index: 1000; /* Schichtung des Headers */
+}
+
+header img {
+    max-height: 50px; /* Maximale Höhe des Logos */
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none; /* Entfernt Punkte von Listen */
+    margin: 0; /* Entfernt Außenabstand */
+    padding: 0; /* Entfernt Innenabstand */
+    display: flex; /* Horizontale Ausrichtung der Navigation */
+}
+
+nav ul li {
+    margin: 0 15px; /* Abstand zwischen den Navigationspunkten */
+}
+
+nav ul li a {
+    text-decoration: none; /* Entfernt Unterstreichung der Links */
+    color: white; /* Schriftfarbe der Links */
+    font-size: 1rem; /* Schriftgröße der Links */
+}
+
+/* Hamburger Menü für mobile Ansicht */
+.menu-icon {
+    display: none; /* Wird nur bei kleinen Bildschirmen angezeigt */
+    font-size: 1.5rem; /* Schriftgröße für Symbol */
+    cursor: pointer; /* Zeigt Handcursor beim Klicken */
+}
+
+/* Hero Section Styling */
+.hero {
+    text-align: center; /* Zentriert Text */
+    padding: 50px; /* Abstand oben und unten */
+    background-color: rgba(140, 164, 188, 0.8); /* Hintergrundfarbe mit Transparenz */
+    color: white; /* Schriftfarbe */
+}
+
+.hero h1 {
+    font-size: 2.5rem; /* Überschriftengröße */
+}
+
+.hero p {
+    font-size: 1.2rem; /* Textgröße */
+}
+
+/* Body Layout */
+.container {
+    display: flex; /* Horizontales Layout */
+    justify-content: space-between; /* Abstand zwischen linken und rechten Teil */
+    align-items: center; /* Vertikale Ausrichtung */
+    padding: 50px; /* Abstand zum Rand */
+    color: white; /* Schriftfarbe */
+}
+
+.container .content {
+    flex: 1; /* Nutzt gleiche Breite wie das Bild */
+    margin-right: 20px; /* Abstand zum Bild */
+}
+
+.container .content h2 {
+    font-size: 2rem; /* Titelgröße */
+    margin-bottom: 20px; /* Abstand unterhalb des Titels */
+}
+
+.container .content p {
+    font-size: 1.2rem; /* Textgröße */
+}
+
+.container .image {
+    flex: 1; /* Gleiche Breite wie Textinhalt */
+}
+
+.container .image img {
+    width: 100%; /* Bild passt sich an den Container an */
+    border-radius: 10px; /* Abgerundete Ecken */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333; /* Dunkler Hintergrund für den Footer */
+    color: white; /* Schriftfarbe im Footer */
+    text-align: center; /* Zentrierter Text */
+    padding: 20px; /* Abstand im Footer */
+    position: relative; /* Positionierung */
+}
+
+footer a {
+    color: #8CA4BC; /* Linkfarbe im Footer */
+    text-decoration: none; /* Entfernt Unterstreichung der Links */
+    margin: 0 10px; /* Abstand zwischen Links */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Zeigt das Hamburger-Menü */
+    }
+
+    nav ul {
+        display: none; /* Versteckt Navigation standardmäßig */
+        flex-direction: column; /* Vertikale Navigation für kleine Bildschirme */
+        background-color: #8CA4BC; /* Hintergrundfarbe für Menü */
+        position: absolute; /* Fixiert Menü */
+        top: 60px; /* Abstand vom Header */
+        right: 0; /* Ausrichtung am rechten Bildschirmrand */
+        width: 100%; /* Volle Breite */
+    }
+
+    nav ul.show {
+        display: flex; /* Zeigt Navigation beim Klicken */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Vertikaler Abstand zwischen Links */
+    }
+
+    /* Body Layout Anpassung */
+    .container {
+        flex-direction: column; /* Vertikales Layout für kleine Bildschirme */
+    }
+
+    .container .content {
+        margin-right: 0; /* Entfernt Abstand bei mobilem Layout */
+        margin-bottom: 20px; /* Abstand zum Bild */
+    }
+}
