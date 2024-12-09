@@ -229,7 +229,7 @@ footer button:hover {
         flex-direction: column; /* Vertikale Navigation für kleine Bildschirme */
         background-color: #ffffff; /* Hintergrundfarbe für Menü */
         position: absolute; /* Fixiert Menü */
-        top: 60px; /* Abstand vom Header */
+        top: 120px; /* Abstand vom Header */
         right: 0; /* Ausrichtung am rechten Bildschirmrand */
         width: 100%; /* Volle Breite */
     }
