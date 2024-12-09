@@ -5,7 +5,7 @@ body {
     margin: 0; /* Entfernt Standardabstände */
     padding: 0; /* Entfernt Standardabstände */
     box-sizing: border-box; /* Sorgt für konsistente Größenberechnung */
-    background-color: #f4f4f4; /* Hintergrundfarbe der Seite */
+    background-color: #8CA4BC; /* Hintergrundfarbe der Seite */
     background-image: url('background.jpg'); /* Hintergrundbild */
     background-size: cover; /* Bild skaliert auf gesamten Bildschirm */
     background-position: center; /* Hintergrundbild zentrieren */
@@ -14,8 +14,8 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #8CA4BC; /* Hauptfarbe des Headers */
-    color: white; /* Schriftfarbe im Header */
+    background-color: #ffffff; /* Hauptfarbe des Headers */
+    color: #000000; /* Schriftfarbe im Header */
     padding: 10px 20px; /* Abstand im Header */
     display: flex; /* Flexbox für Layout */
     justify-content: space-between; /* Platz zwischen Logo und Navigation */
@@ -43,9 +43,25 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none; /* Entfernt Unterstreichung der Links */
-    color: white; /* Schriftfarbe der Links */
+    color: #000000; /* Schriftfarbe der Links */
     font-size: 1rem; /* Schriftgröße der Links */
 }
+
+nav ul li a.cta {
+    background-color: #8CA4BC; /* Farbe des Buttons */
+    color: white; /* Textfarbe */
+    padding: 10px 20px; /* Innenabstand für den Button-Look */
+    border-radius: 5px; /* Abgerundete Ecken */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    font-weight: bold; /* Text fett */
+    transition: background-color 0.3s; /* Weicher Übergang beim Hover */
+}
+
+nav ul li a.cta:hover {
+    background-color: #6F8DA1; /* Farbe beim Hover */
+}
+
+
 
 /* Hamburger Menü für mobile Ansicht */
 .menu-icon {
@@ -106,17 +122,100 @@ nav ul li a {
 
 /* Footer Styling */
 footer {
-    background-color: #333; /* Dunkler Hintergrund für den Footer */
-    color: white; /* Schriftfarbe im Footer */
-    text-align: center; /* Zentrierter Text */
-    padding: 20px; /* Abstand im Footer */
-    position: relative; /* Positionierung */
+    background-color: #89939E; /* Dunkler Hintergrund */
+    color: white; /* Weißer Text */
+    padding: 20px; /* Innenabstand */
 }
 
-footer a {
-    color: #8CA4BC; /* Linkfarbe im Footer */
-    text-decoration: none; /* Entfernt Unterstreichung der Links */
-    margin: 0 10px; /* Abstand zwischen Links */
+.footer-container {
+    display: flex; /* Flexbox für Spaltenlayout */
+    justify-content: space-between; /* Gleichmäßiger Abstand zwischen Spalten */
+    flex-wrap: wrap; /* Zeilenumbruch bei kleinen Bildschirmen */
+    max-width: 1200px; /* Maximale Breite des Footers */
+    margin: 0 auto; /* Zentrierung des Containers */
+}
+
+.footer-column {
+    flex: 1; /* Alle Spalten gleich breit */
+    margin: 10px; /* Abstand zwischen Spalten */
+}
+
+.footer-column h3 {
+    font-size: 1.2rem; /* Überschriftengröße */
+    margin-bottom: 10px; /* Abstand nach unten */
+}
+
+.footer-column ul {
+    list-style: none; /* Entfernt Listenpunkte */
+    padding: 0; /* Kein Innenabstand */
+}
+
+.footer-column ul li {
+    margin-bottom: 5px; /* Abstand zwischen Links */
+}
+
+.social-media a {
+    color: white; /* Linkfarbe */
+    text-decoration: none; /* Keine Unterstreichung */
+}
+
+.footer-column ul li a {
+    color: white; /* Linkfarbe */
+    text-decoration: none; /* Keine Unterstreichung */
+}
+
+.footer-column ul li a:hover {
+    color: #0b0d0e; /* Farbe beim Hover */
+}
+
+/* Newsletter Styling */
+footer form {
+    display: flex; /* Elemente nebeneinander */
+    flex-direction: column; /* Anordnung untereinander bei kleinen Bildschirmen */
+}
+
+footer input[type="email"] {
+    padding: 10px; /* Innenabstand */
+    margin-bottom: 10px; /* Abstand nach unten */
+    border: none; /* Keine Umrandung */
+    border-radius: 5px; /* Abgerundete Ecken */
+    font-size: 1rem; /* Schriftgröße */
+}
+
+footer button {
+    background-color: #8CA4BC; /* Button-Farbe */
+    color: white; /* Textfarbe */
+    padding: 10px; /* Innenabstand */
+    border: none; /* Keine Umrandung */
+    border-radius: 5px; /* Abgerundete Ecken */
+    font-size: 1rem; /* Schriftgröße */
+    cursor: pointer; /* Zeigt Handcursor beim Hover */
+}
+
+footer button:hover {
+    background-color: #6F8DA1; /* Farbe beim Hover */
+}
+
+/* Logo Styling */
+.footer-logo {
+    max-width: 150px; /* Maximale Breite des Logos */
+    margin-bottom: 10px; /* Abstand nach unten */
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Spalten untereinander anordnen */
+        text-align: center; /* Zentrierter Text */
+    }
+
+    .footer-column {
+        margin: 20px 0; /* Abstand zwischen Spalten */
+    }
+
+    footer form {
+        align-items: center; /* Zentrierte Newsletter-Form */
+    }
 }
 
 /* Responsive Styles */
@@ -128,7 +227,7 @@ footer a {
     nav ul {
         display: none; /* Versteckt Navigation standardmäßig */
         flex-direction: column; /* Vertikale Navigation für kleine Bildschirme */
-        background-color: #8CA4BC; /* Hintergrundfarbe für Menü */
+        background-color: #ffffff; /* Hintergrundfarbe für Menü */
         position: absolute; /* Fixiert Menü */
         top: 60px; /* Abstand vom Header */
         right: 0; /* Ausrichtung am rechten Bildschirmrand */
