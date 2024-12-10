@@ -93,7 +93,6 @@ nav ul li a.cta:hover {
     align-items: center; /* Vertikale Ausrichtung */
     padding: 50px; /* Abstand zum Rand */
     color: white; /* Schriftfarbe */
-    background-image: url(img/background-3.jpg);
 }
 
 .container .content {
