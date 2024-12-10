@@ -75,7 +75,7 @@ nav ul li a.cta:hover {
     text-align: center; /* Zentriert Text */
     padding: 50px; /* Abstand oben und unten */
     background-color: rgba(140, 164, 188, 0.8); /* Hintergrundfarbe mit Transparenz */
-    color: white; /* Schriftfarbe */
+    color: black; /* Schriftfarbe */
 }
 
 .hero h1 {
@@ -92,7 +92,8 @@ nav ul li a.cta:hover {
     justify-content: space-between; /* Abstand zwischen linken und rechten Teil */
     align-items: center; /* Vertikale Ausrichtung */
     padding: 50px; /* Abstand zum Rand */
-    color: white; /* Schriftfarbe */
+    color: #5a6b7b; /* Schriftfarbe */
+    
 }
 
 .container .content {
