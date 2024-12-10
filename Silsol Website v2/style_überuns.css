@@ -6,7 +6,6 @@ body {
     padding: 0; /* Entfernt Standardabstände */
     box-sizing: border-box; /* Sorgt für konsistente Größenberechnung */
     background-color: #8CA4BC; /* Hintergrundfarbe der Seite */
-    background-image: url('background.jpg'); /* Hintergrundbild */
     background-size: cover; /* Bild skaliert auf gesamten Bildschirm */
     background-position: center; /* Hintergrundbild zentrieren */
     background-attachment: fixed; /* Hintergrund bleibt beim Scrollen */
@@ -15,6 +14,7 @@ body {
 /* Header Styling */
 header {
     background-color: #ffffff; /* Hauptfarbe des Headers */
+    
     color: #000000; /* Schriftfarbe im Header */
     padding: 10px 20px; /* Abstand im Header */
     display: flex; /* Flexbox für Layout */
@@ -93,8 +93,7 @@ nav ul li a.cta:hover {
     align-items: center; /* Vertikale Ausrichtung */
     padding: 50px; /* Abstand zum Rand */
     color: white; /* Schriftfarbe */
-    background-image: url(img/background-3.jpg);
-}
+    }
 
 .container .content {
     flex: 1; /* Nutzt gleiche Breite wie das Bild */
@@ -458,9 +457,4 @@ header .container {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.SilSol-Team {
-
-
 }
