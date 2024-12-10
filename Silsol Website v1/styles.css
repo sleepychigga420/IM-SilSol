@@ -59,7 +59,7 @@ header .container {
 .hero {
     background:url('img/background-1.jpg') no-repeat center center/cover;
     color: #fff;
-    height: 100vh;
+    height: 50vh;
     /*display: flex;
     justify-content: center;
     align-items: center;
@@ -93,6 +93,15 @@ header .container {
 
 }
 
+#sidebysideimg {
+    display:inline-block;
+    width: 50%;
+}
+
+#sidebysidetext {
+    display:inline-block;
+    width: 50%
+}
 
 .cta {
     display: flex;
@@ -107,23 +116,6 @@ header .container {
     margin-bottom: 2rem;
 }
 
-.btn {
-    padding: 10px 20px;
-    background: #8ab0db;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s ease;
-}
-
-
-.cta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .btn:hover {
     background: #d35400;
 }
@@ -134,7 +126,7 @@ header .container {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 5000px;
     margin: 0 auto;
     padding: 0 20px;
     text-align: center;
@@ -154,7 +146,7 @@ header .container {
 
 .column {
     flex: 1;
-    padding: 1rem;
+    padding:0%;
     text-align: center;
 }
 
@@ -220,4 +212,27 @@ header .container {
 /*Impressum*/
 #aboutParagraph{
     margin-bottom: 40px;
+}
+
+
+/*Überuns*/
+.btn {
+    padding: 10px 20px;
+    background: #8ab0db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SilSol-Team {
+
+
 }
