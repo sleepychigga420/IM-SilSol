@@ -209,3 +209,19 @@ header .container {
     align-items: center;
     justify-content: center;
 }
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    .three-column {
+        flex-direction: column; /* Spalten untereinander anordnen */
+        text-align: center; /* Zentrierter Text */
+    }
+
+    .three-column {
+        margin: 20px 0; /* Abstand zwischen Spalten */
+    }
+
+    footer form {
+        align-items: center; /* Zentrierte Newsletter-Form */
+    }
+}
