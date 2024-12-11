@@ -252,3 +252,22 @@ footer button:hover {
         margin-bottom: 20px; /* Abstand zum Bild */
     }
 }
+
+.apps {
+    max-width: 5000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.apps_columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.apps_column {
+    flex: 1;
+    padding:0%;
+    text-align: center;
+}
