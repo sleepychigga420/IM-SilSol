@@ -5,8 +5,7 @@ body {
     margin: 0; /* Entfernt Standardabstände */
     padding: 0; /* Entfernt Standardabstände */
     box-sizing: border-box; /* Sorgt für konsistente Größenberechnung */
-    background-color: #8CA4BC; /* Hintergrundfarbe der Seite */
-    background-image: url("background-1.jpg"); /* Hintergrundbild */
+    background-image: url("background.jpg"); /* Hintergrundbild */
     background-size: cover; /* Bild skaliert auf gesamten Bildschirm */
     background-position: center; /* Hintergrundbild zentrieren */
     background-attachment: fixed; /* Hintergrund bleibt beim Scrollen */
@@ -92,7 +91,8 @@ nav ul li a.cta:hover {
     justify-content: space-between; /* Abstand zwischen linken und rechten Teil */
     align-items: center; /* Vertikale Ausrichtung */
     padding: 50px; /* Abstand zum Rand */
-    color: #5a6b7b; /* Schriftfarbe */
+    color: #ffffff; /* Schriftfarbe */
+    background-image: url(img/background-3.jpg);
     
 }
 
@@ -110,9 +110,11 @@ nav ul li a.cta:hover {
     font-size: 1.2rem; /* Textgröße */
 }
 
+
 .container .image {
-    flex: 1; /* Gleiche Breite wie Textinhalt */
+    flex: 0.5; /* Gleiche Breite wie Textinhalt */
 }
+
 
 .container .image img {
     max-width: 300px; /* Maximale Breite von 300 Pixel */
