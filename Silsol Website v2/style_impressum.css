@@ -52,6 +52,7 @@ header .container {
     align-items: center; /* Vertikale Ausrichtung */
     color: #5a6b7b; /* Schriftfarbe */
     text-align: center;
+    background-image: none;
 }
 
 .container .content {

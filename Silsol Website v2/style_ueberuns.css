@@ -1,6 +1,7 @@
-
-
 /* General Reset */
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +12,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f5f5f5;
-    color: #333;
+    color: #6F8DA1;
 }
 
 
@@ -62,7 +63,7 @@ header .container {
 .hero-content {
     display: flex;
     width:700px;
-    margin:auto;
+    margin: 130px auto;
 }
 
 .home{
@@ -88,7 +89,8 @@ header .container {
 
 #sidebysideimg {
     display:inline-block;
-    width: 50%;
+    width: 60%;
+    flex: 1;
 }
 
 #sidebysidetext {
@@ -97,10 +99,10 @@ header .container {
 }
 
 .cta {
-    display: flex;
     justify-content: center;
     align-items: center;
     padding: 70px;
+    text-align: center;
 }
 
 
@@ -110,13 +112,11 @@ header .container {
 }
 
 .btn:hover {
-    background: #d35400;
+    background: #6F8DA1; /* Farbe beim hover */;
 }
-
 .three-column, .four-column, .client-review, .text-image {
     padding: 3rem 0;
     background: #fff;
-    color: #5a6b7b;
     text-align: center;
 }
 
@@ -125,13 +125,14 @@ header .container {
     margin: 0 auto;
     padding: 0 100px;
     text-align: center;
+    background-image: none;
+    color: #6F8DA1;
 }
 
 .three-column h2, .four-column h2, .client-review h2, .text-image h2 {
-    text-align:center;
+    text-align: center;
     margin-bottom: 2rem;
     font-size: 2rem;
-    color: #5a6b7b;
 }
 
 .columns {
@@ -178,10 +179,6 @@ header .container {
     border-radius: 10px;
 }
 
-img {
-    border-radius: 10px;
-}
-
 .form-container {
     margin:auto;
     width:400px;
@@ -189,6 +186,35 @@ img {
 
 .form-container input, .form-container textarea {
     width: 100%;
+}
+
+/*SilverRailApp*/
+.appdownload h2 {
+    font-size: 64px;
+}
+
+.appdownload_platform {
+    display: flex;
+    justify-content: space-between;
+}
+
+.appdownload_platform img {
+    width: 30vw;
+}
+
+.appdownload_platform p {
+    font-size: 36px;
+}
+
+/*Impressum*/
+#aboutParagraph{
+    margin-bottom: 40px;
+}
+
+.personPictures { /*Bilder rund machen*/
+    border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px
 }
 
 /*Überuns*/
@@ -202,24 +228,10 @@ img {
     transition: background 0.3s ease;
 }
 
-.cta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.icon {
+    color: #513664
 }
 
-/* Responsive Anpassungen */
-@media (max-width: 768px) {
-    .three-column {
-        flex-direction: column; /* Spalten untereinander anordnen */
-        text-align: center; /* Zentrierter Text */
-    }
-
-    .three-column {
-        margin: 20px 0; /* Abstand zwischen Spalten */
-    }
-
-    footer form {
-        align-items: center; /* Zentrierte Newsletter-Form */
-    }
+.footer-column {
+    text-align: left;
 }

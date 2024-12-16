@@ -5,13 +5,6 @@ body {
     color: #333;
 }
 
-header {
-    background: #8ab0db;
-    color: #fff;
-    padding: 1rem 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
 .appdownload h2 {
 
     font-size: 64px;
