@@ -1,0 +1,46 @@
+.input-box {
+    height: 50px;
+  }
+
+  .container_kontakt {
+    display: flex; /* Horizontales Layout */
+    justify-content: space-between; /* Abstand zwischen linken und rechten Teil */
+    align-items: center; /* Vertikale Ausrichtung */
+    padding: 50px; /* Abstand zum Rand */
+    color: #FFFFFF; /* Schriftfarbe */
+    
+}
+
+.container_kontakt .content {
+    flex: 1; /* Nutzt gleiche Breite wie das Bild */
+    margin-right: 20px; /* Abstand zum Bild */
+}
+
+.container_kontakt .content h2 {
+    font-size: 2rem; /* Titelgröße */
+    margin-bottom: 20px; /* Abstand unterhalb des Titels */
+}
+
+.container_kontakt .content p {
+    font-size: 1.2rem; /* Textgröße */
+}
+
+.container_kontakt .image {
+    flex: 1; /* Gleiche Breite wie Textinhalt */
+}
+
+.container_kontakt .image img {
+    max-width: 300px; /* Maximale Breite von 300 Pixel */
+    width: 100%; /* Fallback für kleinere Container */
+    height: auto; /* Beibehaltung der Proportionen */
+}
+
+.container_FAQ {
+    display: flex; /* Horizontales Layout */
+    justify-content: space-between; /* Abstand zwischen linken und rechten Teil */
+    align-items: center; /* Vertikale Ausrichtung */
+    padding: 50px; /* Abstand zum Rand */
+    color: #5a6b7b; /* Schriftfarbe */
+    background-color: #FFFFFF;
+    
+}
