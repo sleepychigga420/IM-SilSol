@@ -5,11 +5,46 @@ body {
     color: #333;
 }
 
+/*alles über header*/
+
 header {
     background: #8ab0db;
     color: #fff;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    background:url('img/background-1.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 50vh;
+}
+
+.hero-content {
+    display: flex;
+    width:700px;
+    margin:auto;
+}
+
+.home{
+    padding-top: 40px;
+}
+
+.hero-text{
+    flex:2;
+}
+.hero-picture{
+    flex:1;
+}
+
+.hero-picture img{
+    width:200px;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+
 }
 
 .appdownload h2 {
