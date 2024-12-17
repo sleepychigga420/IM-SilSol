@@ -2,7 +2,7 @@
     height: 50px;
   }
 
-  .container_kontakt {
+.container_kontakt {
     display: flex; /* Horizontales Layout */
     justify-content: space-between; /* Abstand zwischen linken und rechten Teil */
     align-items: center; /* Vertikale Ausrichtung */
@@ -35,16 +35,6 @@
     height: auto; /* Beibehaltung der Proportionen */
 }
 
-.container_FAQ {
-    display: flex; /* Horizontales Layout */
-    justify-content: space-between; /* Abstand zwischen linken und rechten Teil */
-    align-items: center; /* Vertikale Ausrichtung */
-    padding: 50px; /* Abstand zum Rand */
-    color: #5a6b7b; /* Schriftfarbe */
-    background-color: #FFFFFF;
-    
-}
-
 .body_ville {
     font-family: Arial, sans-serif; /* Schriftart für die gesamte Seite */
     margin: 0; /* Entfernt Standardabstände */
@@ -65,6 +55,18 @@ input[type=text] {
   }
 
   input[type=text]:focus {
+    border: 3px solid #8CA4BC;
+  }
+
+  input[type=email] {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+  }
+
+  input[type=email]:focus {
     border: 3px solid #8CA4BC;
   }
 
@@ -96,3 +98,101 @@ input[type=button], input[type=submit], input[type=reset] {
     margin: 4px 2px;
     cursor: pointer;
   }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin: 20px;
+}
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+input, select, textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+textarea {
+    resize: none;
+}
+input[type="submit"] {
+    background-color: #8CA4BC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #6b8ba3;
+}
+.radio-group {
+    display: flex; /* Aligns items in a row */
+    align-items: center; /* Vertically centers the label with the radio button */
+    margin-bottom: 10px; /* Adds spacing between rows */
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 10px; /* Space between the radio button and label */
+}
+
+.container_FAQ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    color: #5a6b7b;
+    background-color: #ffffff;
+}
+
+.faq-card {
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #5a6b7b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:hover {
+    color: #8CA4BC;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.faq-card.open .faq-answer {
+    display: block;
+}
+
+.container_FAQ h2 {
+    font-size: 2.5rem; /* Adjust as needed */
+    font-weight: bold; /* Optional: Makes it stand out more */
+    margin-bottom: 10px;
+}
+
+.container_FAQ p {
+    font-size: 1.5rem; /* Adjust as needed */
+    margin-bottom: 20px;
+}
