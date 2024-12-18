@@ -1,0 +1,112 @@
+/* Container für den Inhalt */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ermöglicht, dass die Elemente in mehreren Zeilen umgebrochen werden */
+}
+
+/* Spalten für die Job-Section */
+.columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Einzelne Spalten */
+.column {
+    text-align: center; /* Zentriert den Text */
+    padding: 20px; /* Etwas Abstand um den Inhalt */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Zentriert die Inhalte (Text und Icons) horizontal */
+    flex-basis: 30%; /* Jede Spalte nimmt ca. 30% des Platzes ein */
+    margin: 10px; /* Abstand zwischen den Spalten */
+}
+
+/* Icons */
+.column .icon {
+    font-size: 48px; /* Vergrößert die Icons */
+    margin-bottom: 15px; /* Abstand zwischen Icon und Text */
+    color: #333; /* Farbe der Icons */
+}
+
+/* Titel in den Spalten */
+.column h3 {
+    font-size: 24px; /* Größe des Titels */
+    font-weight: bold;
+    margin: 10px 0; /* Abstand zwischen Titel und Text */
+}
+
+/* Text in den Spalten */
+.column p {
+    font-size: 16px; /* Größe des Texts */
+    color: #666; /* Textfarbe */
+    line-height: 1.5;
+}
+
+/* Responsive Anpassungen */
+
+/* Ab einer Breite von 768px (Tablets) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stapele die Inhalte untereinander */
+        align-items: center;
+        padding: 20px;
+    }
+
+    .columns {
+        flex-direction: column; /* Stapele die Spalten untereinander */
+        align-items: center;
+        width: 100%; /* Jede Spalte nimmt 100% der Breite ein */
+    }
+
+    .column {
+        flex-basis: 80%; /* Jede Spalte nimmt 80% der Breite auf Tablets */
+        margin-bottom: 20px; /* Etwas Abstand zwischen den Spalten */
+    }
+}
+
+
+/* Call-to-Action Section */
+.cta-section {
+    background-color: #f4f4f4; /* Heller Hintergrund für den CTA-Bereich */
+    padding: 40px 20px; /* Etwas Padding oben und unten */
+    text-align: center; /* Zentriert den Text */
+    margin-top: 40px; /* Abstand zum Inhalt darüber */
+}
+
+.cta-content h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.cta-content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #6F8DA1; /* Blaue Hintergrundfarbe */
+    color: #fff; /* Weiße Schrift */
+    padding: 15px 30px; /* Innenabstand */
+    font-size: 18px; /* Schriftgröße */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    border-radius: 5px; /* Abgerundete Ecken */
+    transition: background-color 0.3s ease; /* Weicher Übergang für Hover-Effekt */
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Dunklere Blauton beim Hover */
+}
