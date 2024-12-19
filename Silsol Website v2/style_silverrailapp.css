@@ -5,12 +5,37 @@ body {
     color: #333;
 }
 
-header {
-    background: #8ab0db;
-    color: #fff;
-    padding: 1rem 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.handynutzer {
+
+    padding: 50px;
 }
+
+.schrittfürschritt {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    background-color: lightgray;
+}
+
+.c1  h2{
+   display: block;
+   font-size: 50px;
+   color: #black;
+   
+}
+
+.c1  h3{
+    font-size: 40px;
+    color: #6F8DA1;
+    
+ }
+
+.c2 p {
+   
+    font-size: 25px;
+}
+
 
 .appdownload h2 {
 
@@ -23,7 +48,7 @@ header {
 }
 
 .appdownload_platform img {
-    width: 30vw;
+   max-height: 200px;
 }
 
 .appdownload_platform p {
