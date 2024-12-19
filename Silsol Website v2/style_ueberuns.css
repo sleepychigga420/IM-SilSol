@@ -235,3 +235,178 @@ header .container {
 .footer-column {
     text-align: left;
 }
+
+
+
+/* responsive überuns*/
+
+/* Responsiveness für Hauptinhalt */
+@media (max-width: 768px) {
+    /* Hero-Bereich */
+    .hero-content {
+        text-align: center; /* Inhalt zentrieren */
+    }
+
+    .hero-content {
+        padding: 20px;
+    }
+
+    .hero-text h2 {
+        font-size: 1.8rem; /* Titelgröße anpassen */
+        text-align: center;
+    }
+
+
+    .content {
+        display: flex;
+        flex-direction: column; /* Inhalte vertikal anordnen */
+        padding: 5px;
+    }
+
+
+    /* Text-Bild-Bereich */
+    .text-image .container {
+        display: flex;
+        flex-direction: column; /* Inhalte vertikal anordnen */
+        gap: 20px; /* Abstand zwischen Elementen */
+        padding: 20px;
+    }
+
+    .text-image .content {
+        text-align: center; /* Text zentrieren */
+    }
+
+    .text-image .content .text h2 {
+        font-size: 1.8rem; /* Titelgröße anpassen */
+    }
+
+    .text-image .content .text p {
+        font-size: 1rem; /* Schriftgröße des Textes anpassen */
+    }
+
+    .text-image .image img {
+        max-width: 100%; /* Bild an Containerbreite anpassen */
+        height: auto; /* Proportionen beibehalten */
+    }
+
+    /* Drei-Spalten-Bereich */
+    .three-column .container {
+        display: flex;
+        flex-direction: column; /* Spalten vertikal anordnen */
+        gap: 20px; /* Abstand zwischen Spalten */
+        padding: 30px;
+    }
+
+    .three-column .columns {
+        flex-direction: column; /* Spalten untereinander darstellen */
+        text-align: center; /* Inhalt zentrieren */
+    }
+
+    .three-column .column {
+        padding: 10px; /* Abstand innerhalb der Spalte */
+    }
+
+    .three-column .column h3 {
+        font-size: 1.5rem; /* Schriftgröße des Titels anpassen */
+    }
+
+    .three-column .column p {
+        font-size: 1rem; /* Textgröße anpassen */
+    }
+
+    /* Vier-Spalten-Bereich */
+    .four-column .container {
+        text-align: center; /* Text zentrieren */
+        padding: 20px;
+    }
+
+    .four-column h2 {
+        font-size: 1.8rem; /* Titelgröße anpassen */
+    }
+
+    .four-column p {
+        font-size: 1rem; /* Textgröße anpassen */
+    }
+
+    #sidebysidetext {
+        display:inline-block;
+        width: 90%
+    }
+    
+
+    /* Team-Bereich */
+    .three-column .columns .column img {
+        max-width: 100px; /* Bildgröße reduzieren */
+        height: auto; /* Proportionen beibehalten */
+        margin: 0 auto; /* Bild zentrieren */
+    }
+
+    .three-column .columns .column h3 {
+        font-size: 1.5rem; /* Schriftgröße des Namens anpassen */
+    }
+
+    .three-column .columns .column h4 {
+        font-size: 1.2rem; /* Schriftgröße der Position anpassen */
+    }
+
+    .three-column .columns .column p {
+        font-size: 1rem; /* Textgröße anpassen */
+    }
+
+    .cta .btn {
+        display: block;
+        width: 100%; /* Button über gesamte Breite */
+        text-align: center; /* Text zentrieren */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Hero-Bereich */
+    .hero-text h2 {
+        font-size: 1.5rem; /* Titelgröße weiter reduzieren */
+    }
+
+    /* Text-Bild-Bereich */
+    .text-image .content .text h2 {
+        font-size: 1.5rem; /* Titelgröße weiter reduzieren */
+    }
+
+    .text-image .content .text p {
+        font-size: 0.9rem; /* Textgröße reduzieren */
+    }
+
+    /* Drei-Spalten-Bereich */
+    .three-column .column h3 {
+        font-size: 1.2rem; /* Titelgröße weiter anpassen */
+    }
+
+    .three-column .column p {
+        font-size: 0.9rem; /* Textgröße weiter reduzieren */
+    }
+
+    /* Vier-Spalten-Bereich */
+    .four-column h2 {
+        font-size: 1.5rem; /* Titelgröße anpassen */
+    }
+
+    .four-column p {
+        font-size: 0.9rem; /* Textgröße anpassen */
+    }
+
+    /* Team-Bereich */
+    .three-column .columns .column img {
+        max-width: 80px; /* Bildgröße weiter reduzieren */
+    }
+
+    .three-column .columns .column h3 {
+        font-size: 1.2rem; /* Titelgröße weiter reduzieren */
+    }
+
+    .three-column .columns .column h4 {
+        font-size: 1rem; /* Positiongröße anpassen */
+    }
+
+    .three-column .columns .column p {
+        font-size: 0.9rem; /* Textgröße anpassen */
+    }
+}
