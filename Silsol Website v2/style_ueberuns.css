@@ -1,59 +1,15 @@
 /* General Reset */
-
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f5f5f5;
-    color: #6F8DA1;
-}
-
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #f5f5f5;
-}
-
 .hero {
     background:url('img/background-1.jpg') no-repeat center center/cover;
     color: #fff;
     height: 50vh;
+    padding-top: 40px;
     /*display: flex;
     justify-content: center;
     align-items: center;
@@ -66,17 +22,6 @@ header .container {
     margin: 130px auto;
 }
 
-.home{
-    padding-top: 40px;
-}
-
-.hero-text{
-    flex:2;
-}
-.hero-picture{
-    flex:1;
-}
-
 .hero-picture img{
     width:200px;
 }
@@ -84,7 +29,6 @@ header .container {
 .hero-content h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
-
 }
 
 #sidebysideimg {
@@ -105,19 +49,14 @@ header .container {
     text-align: center;
 }
 
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
 .btn:hover {
     background: #6F8DA1; /* Farbe beim hover */;
 }
-.three-column, .four-column, .client-review, .text-image {
+.three-column, .one-column,.text-image {
     padding: 3rem 0;
     background: #fff;
     text-align: center;
+    color: #6F8DA1;
 }
 
 .container {
@@ -127,12 +66,6 @@ header .container {
     text-align: center;
     background-image: none;
     color: #6F8DA1;
-}
-
-.three-column h2, .four-column h2, .client-review h2, .text-image h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2rem;
 }
 
 .columns {
@@ -147,68 +80,15 @@ header .container {
     text-align: center;
 }
 
-.column h3 {
-    margin: 1rem 0;
-}
-
-.client-review .review {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    font-style: italic;
-}
-
-.client-review h4 {
-    margin-top: 1rem;
-    font-weight: normal;
-    color: #555;
-}
-
 .text-image .content {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.text-image .text {
-    flex: 1;
-}
-
 .text-image .image img {
     max-width: 100%;
     border-radius: 10px;
-}
-
-.form-container {
-    margin:auto;
-    width:400px;
-  }
-
-.form-container input, .form-container textarea {
-    width: 100%;
-}
-
-/*SilverRailApp*/
-.appdownload h2 {
-    font-size: 64px;
-}
-
-.appdownload_platform {
-    display: flex;
-    justify-content: space-between;
-}
-
-.appdownload_platform img {
-    width: 30vw;
-}
-
-.appdownload_platform p {
-    font-size: 36px;
-}
-
-/*Impressum*/
-#aboutParagraph{
-    margin-bottom: 40px;
 }
 
 .personPictures { /*Bilder rund machen*/
@@ -235,8 +115,6 @@ header .container {
 .footer-column {
     text-align: left;
 }
-
-
 
 /* responsive überuns*/
 
@@ -314,17 +192,17 @@ header .container {
         font-size: 1rem; /* Textgröße anpassen */
     }
 
-    /* Vier-Spalten-Bereich */
-    .four-column .container {
+    /* Ein-Spalten-Bereich,Vision */
+    .one-column .container {
         text-align: center; /* Text zentrieren */
         padding: 20px;
     }
 
-    .four-column h2 {
+    .one-column h2 {
         font-size: 1.8rem; /* Titelgröße anpassen */
     }
 
-    .four-column p {
+    .one-column p {
         font-size: 1rem; /* Textgröße anpassen */
     }
 
@@ -384,12 +262,12 @@ header .container {
         font-size: 0.9rem; /* Textgröße weiter reduzieren */
     }
 
-    /* Vier-Spalten-Bereich */
-    .four-column h2 {
+    /* Ein-Spalten-Bereich,Vision */
+    .one-column h2 {
         font-size: 1.5rem; /* Titelgröße anpassen */
     }
 
-    .four-column p {
+    .one-column p {
         font-size: 0.9rem; /* Textgröße anpassen */
     }
 
