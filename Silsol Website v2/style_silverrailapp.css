@@ -49,3 +49,106 @@ body {
 .appdownload_platform p {
     font-size: 36px;
 }
+
+
+
+
+/* responsive */
+
+/* Responsiveness for Main Content */
+@media (max-width: 821px) {
+    /* Container für SilverRail App Download */
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .container .content h2 {
+        font-size: 1.8rem; /* Titelgröße reduzieren */
+    }
+
+    .container .content p {
+        font-size: 1rem; /* Kleinere Textgröße */
+    }
+
+    .container .image img {
+        max-width: 80%; /* Bild an Containerbreite anpassen */
+        height: auto; /* Proportionen beibehalten */
+    }
+
+    /* Appdownload Section */
+    .appdownload {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .appdownload h2 {
+        font-size: 2rem; /* Titelgröße anpassen */
+    }
+
+    .appdownload_platform {
+        flex-direction: column; /* Plattformen untereinander */
+        align-items: center;
+        gap: 15px; /* Abstand zwischen Plattformen */
+    }
+
+    .appdownload_platform img {
+        max-height: 100px; /* Bildhöhe reduzieren */
+    }
+
+    .appdownload_platform p {
+        font-size: 1rem; /* Textgröße reduzieren */
+        text-align: center;
+    }
+
+    /* Schritt-für-Schritt Section */
+    .schrittfürschritt {
+        flex-direction: column; /* Inhalte untereinander */
+        text-align: center;
+        gap: 20px; /* Abstand zwischen den Elementen */
+        padding: 20px;
+    }
+
+    .c1 h2 {
+        font-size: 2rem; /* Titelgröße anpassen */
+    }
+
+    .c1 h3 {
+        font-size: 1.5rem; /* Untertitelgröße anpassen */
+    }
+
+    .c2 p {
+        font-size: 1rem; /* Textgröße anpassen */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Feinanpassungen für sehr kleine Geräte */
+    .container .content h2 {
+        font-size: 1.5rem; /* Weitere Reduktion der Titelgröße */
+    }
+
+    .appdownload_platform img {
+        max-height: 80px; /* Bildgröße weiter reduzieren */
+    }
+
+    .appdownload_platform p {
+        font-size: 0.9rem; /* Kleinere Schriftgröße */
+    }
+
+    .c1 h2 {
+        font-size: 1.8rem; /* Weitere Reduktion der Titelgröße */
+    }
+
+    .c1 h3 {
+        font-size: 1.2rem; /* Weitere Reduktion der Untertitelgröße */
+    }
+
+    .c2 p {
+        font-size: 0.9rem; /* Textgröße reduzieren */
+    }
+}

@@ -196,3 +196,97 @@ input[type="submit"]:hover {
     font-size: 1.5rem; /* Adjust as needed */
     margin-bottom: 20px;
 }
+
+
+
+
+
+
+/* responsive
+
+/* Responsiveness for Main Content */
+@media (max-width: 768px) {
+    /* Kontakt Container */
+    .container_kontakt {
+        flex-direction: column; /* Inhalte untereinander statt nebeneinander */
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .container_kontakt .content {
+        margin-right: 0; /* Abstand rechts entfernen */
+        text-align: center; /* Text zentrieren */
+    }
+
+    .container_kontakt .content h2 {
+        font-size: 1.8rem; /* Titelgröße anpassen */
+    }
+
+    .container_kontakt .content p {
+        font-size: 1rem; /* Textgröße anpassen */
+    }
+
+    .container_kontakt .image img {
+        max-width: 100%; /* Bild passt sich der Containerbreite an */
+        height: auto; /* Proportionen beibehalten */
+    }
+
+    /* Formular */
+    form {
+        align-items: center; /* Formularinhalte zentrieren */
+     
+    }
+
+    input, select, textarea {
+        width: 100%; /* Felder füllen die Breite */
+    }
+
+    input[type="submit"] {
+        width: auto; /* Button passt sich an */
+    }
+
+    /* FAQ Section */
+    .container_FAQ {
+        padding: 20px; /* Weniger Padding */
+    }
+
+    .faq-card {
+        width: 100%; /* Kartengröße anpassen */
+    }
+
+    .faq-question {
+        font-size: 1.2rem; /* Kleinere Schriftgröße */
+    }
+
+    .faq-answer {
+        font-size: 1rem; /* Antworttextgröße anpassen */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Kontakt Container */
+    .container_kontakt .content h2 {
+        font-size: 1.5rem; /* Titelgröße weiter reduzieren */
+    }
+
+    .container_kontakt .content p {
+        font-size: 0.9rem; /* Kleinere Schrift für den Text */
+    }
+
+    .container_kontakt .image img {
+        max-width: 100%; /* Bild vollständig responsive */
+    }
+
+    /* FAQ Section */
+    .faq-question {
+        font-size: 1rem; /* Kleinere Schriftgröße */
+    }
+
+    .faq-answer {
+        font-size: 0.9rem; /* Antworttext weiter anpassen */
+    }
+
+    .faq-card {
+        padding: 15px; /* Weniger Padding in den Karten */
+    }
+}

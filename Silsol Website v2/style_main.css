@@ -273,3 +273,116 @@ footer button:hover {
     padding:0%;
     text-align: center;
 }
+
+
+
+/* responsive startseite
+/* Responsiveness for Main Content */
+@media (max-width: 768px) {
+    /* Willkommen-Container */
+    .container {
+        display: flex;
+        flex-direction: column; /* Inhalte untereinander */
+        align-items: center;
+        text-align: center;
+        gap: 20px; /* Abstand zwischen den Elementen */
+        padding: 20px;
+    }
+
+    .container .content h2 {
+        font-size: 1.8rem; /* Titelgröße anpassen */
+    }
+
+    .container .content p {
+        font-size: 1rem; /* Textgröße anpassen */
+    }
+
+    .container .image img {
+        max-width: 80%; /* Bild an Containerbreite anpassen */
+        height: auto; /* Proportionen beibehalten */
+    }
+
+    /* Drei-Spalten-Bereich */
+    .three-column .apps {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .three-column .apps h2 {
+        font-size: 2rem; /* Titelgröße anpassen */
+    }
+
+    .three-column .apps_columns {
+        flex-direction: column; /* Spalten untereinander */
+        gap: 20px; /* Abstand zwischen den Spalten */
+    }
+
+    .three-column .apps_column {
+        text-align: center; /* Zentriert Inhalte innerhalb der Spalte */
+    }
+
+    .three-column .apps_column img {
+        max-width: 50px; /* Bildgröße reduzieren */
+        height: auto; /* Proportionen beibehalten */
+    }
+
+    .three-column .apps_column h3 {
+        font-size: 1.5rem; /* Schriftgröße der Überschrift anpassen */
+    }
+
+    .three-column .apps_column p {
+        font-size: 1rem; /* Textgröße anpassen */
+    }
+
+    /* Kundenbewertungen */
+    .client-review .container {
+        text-align: center; /* Zentriert Inhalte */
+        padding: 20px;
+    }
+
+    .client-review h3 {
+        font-size: 1.8rem; /* Titelgröße anpassen */
+    }
+
+    .client-review p {
+        font-size: 1rem; /* Textgröße anpassen */
+        line-height: 1.5; /* Lesbarkeit verbessern */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Willkommen-Container */
+    .container .content h2 {
+        font-size: 1.5rem; /* Weitere Reduktion der Titelgröße */
+    }
+
+    .container .content p {
+        font-size: 0.9rem; /* Kleinere Textgröße */
+    }
+
+    /* Drei-Spalten-Bereich */
+    .three-column .apps h2 {
+        font-size: 1.5rem; /* Kleinere Titelgröße */
+    }
+
+    .three-column .apps_column img {
+        max-width: 40px; /* Weitere Reduktion der Bildgröße */
+    }
+
+    .three-column .apps_column h3 {
+        font-size: 1.2rem; /* Kleinere Schriftgröße */
+    }
+
+    .three-column .apps_column p {
+        font-size: 0.9rem; /* Kleinere Textgröße */
+    }
+
+    /* Kundenbewertungen */
+    .client-review h3 {
+        font-size: 1.5rem; /* Kleinere Titelgröße */
+    }
+
+    .client-review p {
+        font-size: 0.9rem; /* Kleinere Textgröße */
+    }
+}
