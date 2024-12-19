@@ -213,6 +213,12 @@ input[type="submit"]:hover {
         gap: 20px;
     }
 
+
+        .container .image img {
+            display: none; /* Bild ausblenden */
+        }
+
+
     .container_kontakt .content {
         margin-right: 0; /* Abstand rechts entfernen */
         text-align: center; /* Text zentrieren */
@@ -231,6 +237,7 @@ input[type="submit"]:hover {
         height: auto; /* Proportionen beibehalten */
     }
 
+    
     /* Formular */
     form {
         align-items: center; /* Formularinhalte zentrieren */

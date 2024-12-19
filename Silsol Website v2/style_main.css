@@ -11,6 +11,11 @@ body {
     background-attachment: fixed; /* Hintergrund bleibt beim Scrollen */
 }
 
+
+
+
+
+
 /* Header Styling */
 header {
     background-color: #ffffff; /* Hauptfarbe des Headers */
@@ -59,6 +64,45 @@ nav ul li a.cta {
 nav ul li a.cta:hover {
     background-color: #6F8DA1; /* Farbe beim Hover */
 }
+
+/* Basic styles for the navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+/* Stil für den aktiven Link */
+nav ul li a.active {
+    color: #6F8DA1;
+    font-weight: bold;
+    border-bottom: 2px solid #6F8DA1;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #333;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Underline effect for active link */
+nav ul li a.active {
+    border-bottom: 2px solid #6F8DA1;  /* Blue underline */
+}
+
+/* Optional: Hover effect for links */
+nav ul li a:hover {
+    color: #007bff;
+    border-bottom: 2px solid #007bff; /* Underline on hover */
+}
+
 
 
 

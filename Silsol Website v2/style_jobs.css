@@ -51,6 +51,11 @@ h2 {
     line-height: 1.5;
 }
 
+.container .content p {
+    text-align: center; /* Textgröße */
+    
+}
+
 /* Responsive Anpassungen */
 
 /* Ab einer Breite von 768px (Tablets) */
