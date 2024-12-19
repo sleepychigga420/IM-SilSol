@@ -114,7 +114,7 @@ header .container {
 .btn:hover {
     background: #6F8DA1; /* Farbe beim hover */;
 }
-.three-column, .four-column, .client-review, .text-image {
+.three-column, .one-column, .client-review, .text-image {
     padding: 3rem 0;
     background: #fff;
     text-align: center;
