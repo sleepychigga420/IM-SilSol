@@ -5,9 +5,10 @@
 .container_kontakt {
     display: flex; /* Horizontales Layout */
     justify-content: space-between; /* Abstand zwischen linken und rechten Teil */
-    align-items: center; /* Vertikale Ausrichtung */
+    align-items: flex-start; /* Vertikale Ausrichtung */
     padding: 50px; /* Abstand zum Rand */
     color: #FFFFFF; /* Schriftfarbe */
+    background-image: url(img/background-3.jpg);
     
 }
 
@@ -99,7 +100,7 @@ input[type=button], input[type=submit], input[type=reset] {
     cursor: pointer;
   }
 
-  form {
+form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -130,11 +131,11 @@ input[type="submit"] {
     cursor: pointer;
 }
 input[type="submit"]:hover {
-    background-color: #6b8ba3;
+    background-color: #6F8DA1;
 }
 .radio-group {
     display: flex; /* Aligns items in a row */
-    align-items: center; /* Vertically centers the label with the radio button */
+    align-items: flex-start; /* Vertically centers the label with the radio button */
     margin-bottom: 10px; /* Adds spacing between rows */
 }
 
@@ -147,7 +148,7 @@ input[type="submit"]:hover {
     flex-direction: column;
     align-items: center;
     padding: 50px;
-    color: #5a6b7b;
+    color: #6F8DA1;
     background-color: #ffffff;
 }
 
@@ -165,7 +166,7 @@ input[type="submit"]:hover {
 .faq-question {
     font-size: 1.5rem;
     cursor: pointer;
-    color: #5a6b7b;
+    color: #6F8DA1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -221,7 +222,7 @@ input[type="submit"]:hover {
 
     .container_kontakt .content {
         margin-right: 0; /* Abstand rechts entfernen */
-        text-align: center; /* Text zentrieren */
+        text-align: left; /* Text zentrieren */
     }
 
     .container_kontakt .content h2 {
@@ -237,10 +238,9 @@ input[type="submit"]:hover {
         height: auto; /* Proportionen beibehalten */
     }
 
-    
     /* Formular */
     form {
-        align-items: center; /* Formularinhalte zentrieren */
+        align-items: flex-start; /* Formularinhalte zentrieren */
      
     }
 
