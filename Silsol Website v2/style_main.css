@@ -1,77 +1,64 @@
-
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif; /* Schriftart für die gesamte Seite */
-    margin: 0; /* Entfernt Standardabstände */
-    padding: 0; /* Entfernt Standardabstände */
-    box-sizing: border-box; /* Sorgt für konsistente Größenberechnung */
-    background-image: url("background.jpg"); /* Hintergrundbild */
-    background-size: cover; /* Bild skaliert auf gesamten Bildschirm */
-    background-position: center; /* Hintergrundbild zentrieren */
-    background-attachment: fixed; /* Hintergrund bleibt beim Scrollen */
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
-
-
-
-
-
 
 /* Header Styling */
 header {
-    background-color: #ffffff; /* Hauptfarbe des Headers */
-    color: #000000; /* Schriftfarbe im Header */
-    padding: 10px 20px; /* Abstand im Header */
-    display: flex; /* Flexbox für Layout */
-    justify-content: space-between; /* Platz zwischen Logo und Navigation */
-    align-items: center; /* Vertikale Ausrichtung */
-    position: sticky; /* Fixiert Header beim Scrollen */
-    top: 0; /* Oben auf der Seite */
-    z-index: 1000; /* Schichtung des Headers */
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Logo links, Menü rechts */
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header img {
-    max-height: 100px; /* Maximale Höhe des Logos */
+    max-height: 100px;
+    margin-left: 0; /* Logo bleibt links */
 }
 
 /* Navigation Styling */
 nav ul {
-    list-style: none; /* Entfernt Punkte von Listen */
-    margin: 0; /* Entfernt Außenabstand */
-    padding: 0; /* Entfernt Innenabstand */
-    display: flex; /* Horizontale Ausrichtung der Navigation */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav ul li {
-    margin: 0 15px; /* Abstand zwischen den Navigationspunkten */
+    margin: 0 15px;
 }
 
 nav ul li a {
-    text-decoration: none; /* Entfernt Unterstreichung der Links */
-    color: #000000; /* Schriftfarbe der Links */
-    font-size: 1rem; /* Schriftgröße der Links */
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;
 }
 
 nav ul li a.cta {
-    background-color: #8CA4BC; /* Farbe des Buttons */
-    color: white; /* Textfarbe */
-    padding: 10px 20px; /* Innenabstand für den Button-Look */
-    border-radius: 5px; /* Abgerundete Ecken */
-    text-decoration: none; /* Entfernt die Unterstreichung */
-    font-weight: bold; /* Text fett */
-    transition: background-color 0.3s; /* Weicher Übergang beim Hover */
+    background-color: #8CA4BC;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
 nav ul li a.cta:hover {
-    background-color: #6F8DA1; /* Farbe beim Hover */
-}
-
-/* Basic styles for the navigation */
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
+    background-color: #6F8DA1;
 }
 
 /* Stil für den aktiven Link */
@@ -81,222 +68,190 @@ nav ul li a.active {
     border-bottom: 2px solid #6F8DA1;
 }
 
-nav ul li {
-    display: inline-block;
-}
-
-nav ul li a {
-    text-decoration: none;
-    padding: 10px 15px;
-    color: #333;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-/* Underline effect for active link */
-nav ul li a.active {
-    border-bottom: 2px solid #6F8DA1;  /* Blue underline */
-}
-
-/* Optional: Hover effect for links */
-nav ul li a:hover {
-    color: #007bff;
-    border-bottom: 2px solid #007bff; /* Underline on hover */
-}
-
-
-
-
 /* Hamburger Menü für mobile Ansicht */
 .menu-icon {
-    display: none; /* Wird nur bei kleinen Bildschirmen angezeigt */
-    font-size: 1.5rem; /* Schriftgröße für Symbol */
-    cursor: pointer; /* Zeigt Handcursor beim Klicken */
+    display: none; /* Standardmäßig ausgeblendet */
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: auto; /* Rechts ausgerichtet */
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Hamburger-Menü wird sichtbar */
+        margin-right: 10px; /* Etwas Abstand zum rechten Rand */
+    }
+
+    nav ul {
+        display: none; /* Versteckt Navigation standardmäßig */
+        flex-direction: column;
+        background-color: #ffffff;
+        position: absolute;
+        top: 120px; /* Unterhalb des Headers */
+        left: 0; /* Links ausgerichtet */
+        width: 100%; /* Volle Breite */
+        text-align: left; /* Texte links ausgerichtet */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+    }
+
+    nav ul.show {
+        display: flex; /* Navigation sichtbar */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 10px 15px;
+    }
 }
 
 /* Hero Section Styling */
 .hero {
-    text-align: center; /* Zentriert Text */
-    padding: 50px; /* Abstand oben und unten */
-    background-color: rgba(140, 164, 188, 0.8); /* Hintergrundfarbe mit Transparenz */
-    color: black; /* Schriftfarbe */
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(140, 164, 188, 0.8);
+    color: black;
 }
 
 .hero h1 {
-    font-size: 2.5rem; /* Überschriftengröße */
+    font-size: 2.5rem;
 }
 
 .hero p {
-    font-size: 1.2rem; /* Textgröße */
+    font-size: 1.2rem;
 }
 
 /* Body Layout */
 .container {
-    display: flex; /* Horizontales Layout */
-    justify-content: space-between; /* Abstand zwischen linken und rechten Teil */
-    align-items: center; /* Vertikale Ausrichtung */
-    padding: 50px; /* Abstand zum Rand */
-    color: #ffffff; /* Schriftfarbe */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    color: #ffffff;
     background-image: url(img/background-3.jpg);
-    
 }
 
 .container .content {
-    flex: 1; /* Nutzt gleiche Breite wie das Bild */
-    margin-right: 20px; /* Abstand zum Bild */
+    flex: 1;
+    margin-right: 20px;
 }
 
 .container .content h2 {
-    font-size: 2rem; /* Titelgröße */
-    margin-bottom: 20px; /* Abstand unterhalb des Titels */
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 .container .content p {
-    font-size: 1.2rem; /* Textgröße */
+    font-size: 1.2rem;
 }
-
 
 .container .image {
-    flex: 0.5; /* Gleiche Breite wie Textinhalt */
+    flex: 0.5;
 }
 
-
 .container .image img {
-    max-width: 300px; /* Maximale Breite von 300 Pixel */
-    width: 100%; /* Fallback für kleinere Container */
-    height: auto; /* Beibehaltung der Proportionen */
+    max-width: 300px;
+    width: 100%;
+    height: auto;
 }
 
 /* Footer Styling */
 footer {
-    background-color: #89939E; /* Dunkler Hintergrund */
-    color: white; /* Weißer Text */
-    padding: 20px; /* Innenabstand */
+    background-color: #89939E;
+    color: white;
+    padding: 20px;
 }
 
 .footer-container {
-    display: flex; /* Flexbox für Spaltenlayout */
-    justify-content: space-between; /* Gleichmäßiger Abstand zwischen Spalten */
-    flex-wrap: wrap; /* Zeilenumbruch bei kleinen Bildschirmen */
-    max-width: 1200px; /* Maximale Breite des Footers */
-    margin: 0 auto; /* Zentrierung des Containers */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .footer-column {
-    flex: 1; /* Alle Spalten gleich breit */
-    margin: 10px; /* Abstand zwischen Spalten */
+    flex: 1;
+    margin: 10px;
 }
 
 .footer-column h3 {
-    font-size: 1.2rem; /* Überschriftengröße */
-    margin-bottom: 10px; /* Abstand nach unten */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
 .footer-column ul {
-    list-style: none; /* Entfernt Listenpunkte */
-    padding: 0; /* Kein Innenabstand */
+    list-style: none;
+    padding: 0;
 }
 
 .footer-column ul li {
-    margin-bottom: 5px; /* Abstand zwischen Links */
+    margin-bottom: 5px;
 }
 
 .social-media a {
-    color: white; /* Linkfarbe */
-    text-decoration: none; /* Keine Unterstreichung */
+    color: white;
+    text-decoration: none;
 }
 
 .footer-column ul li a {
-    color: white; /* Linkfarbe */
-    text-decoration: none; /* Keine Unterstreichung */
+    color: white;
+    text-decoration: none;
 }
 
 .footer-column ul li a:hover {
-    color: #0b0d0e; /* Farbe beim Hover */
+    color: #0b0d0e;
 }
 
 /* Newsletter Styling */
 footer form {
-    display: flex; /* Elemente nebeneinander */
-    flex-direction: column; /* Anordnung untereinander bei kleinen Bildschirmen */
+    display: flex;
+    flex-direction: column;
 }
 
 footer input[type="email"] {
-    padding: 10px; /* Innenabstand */
-    margin-bottom: 10px; /* Abstand nach unten */
-    border: none; /* Keine Umrandung */
-    border-radius: 5px; /* Abgerundete Ecken */
-    font-size: 1rem; /* Schriftgröße */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 footer button {
-    background-color: #8CA4BC; /* Button-Farbe */
-    color: white; /* Textfarbe */
-    padding: 10px; /* Innenabstand */
-    border: none; /* Keine Umrandung */
-    border-radius: 5px; /* Abgerundete Ecken */
-    font-size: 1rem; /* Schriftgröße */
-    cursor: pointer; /* Zeigt Handcursor beim Hover */
+    background-color: #8CA4BC;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 footer button:hover {
-    background-color: #6F8DA1; /* Farbe beim Hover */
+    background-color: #6F8DA1;
 }
 
-/* Logo Styling */
 .footer-logo {
-    max-width: 150px; /* Maximale Breite des Logos */
-    margin-bottom: 10px; /* Abstand nach unten */
+    max-width: 150px;
+    margin-bottom: 10px;
 }
 
 /* Responsive Anpassungen */
 @media (max-width: 768px) {
     .footer-container {
-        flex-direction: column; /* Spalten untereinander anordnen */
-        text-align: center; /* Zentrierter Text */
+        flex-direction: column;
+        text-align: center;
     }
 
     .footer-column {
-        margin: 20px 0; /* Abstand zwischen Spalten */
+        margin: 20px 0;
     }
 
     footer form {
-        align-items: center; /* Zentrierte Newsletter-Form */
-    }
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .menu-icon {
-        display: block; /* Zeigt das Hamburger-Menü */
-    }
-
-    nav ul {
-        display: none; /* Versteckt Navigation standardmäßig */
-        flex-direction: column; /* Vertikale Navigation für kleine Bildschirme */
-        background-color: #ffffff; /* Hintergrundfarbe für Menü */
-        position: absolute; /* Fixiert Menü */
-        top: 120px; /* Abstand vom Header */
-        right: 0; /* Ausrichtung am rechten Bildschirmrand */
-        width: 100%; /* Volle Breite */
-    }
-
-    nav ul.show {
-        display: flex; /* Zeigt Navigation beim Klicken */
-    }
-
-    nav ul li {
-        margin: 10px 0; /* Vertikaler Abstand zwischen Links */
-    }
-
-    /* Body Layout Anpassung */
-    .container {
-        flex-direction: column; /* Vertikales Layout für kleine Bildschirme */
-    }
-
-    .container .content {
-        margin-right: 0; /* Entfernt Abstand bei mobilem Layout */
-        margin-bottom: 20px; /* Abstand zum Bild */
+        align-items: center;
     }
 }
 
@@ -315,119 +270,110 @@ footer button:hover {
 
 .apps_column {
     flex: 1;
-    padding:0%;
+    padding: 0%;
     text-align: center;
 }
 
-
-
-/* responsive startseite
-/* Responsiveness for Main Content */
+/* Responsive Startseite */
 @media (max-width: 768px) {
-    /* Willkommen-Container */
     .container {
         display: flex;
-        flex-direction: column; /* Inhalte untereinander */
+        flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 20px; /* Abstand zwischen den Elementen */
+        gap: 20px;
         padding: 20px;
     }
 
     .container .content h2 {
-        font-size: 1.8rem; /* Titelgröße anpassen */
+        font-size: 1.8rem;
     }
 
     .container .content p {
-        font-size: 1rem; /* Textgröße anpassen */
+        font-size: 1rem;
     }
 
     .container .image img {
-        max-width: 80%; /* Bild an Containerbreite anpassen */
-        height: auto; /* Proportionen beibehalten */
+        max-width: 80%;
+        height: auto;
     }
 
-    /* Drei-Spalten-Bereich */
     .three-column .apps {
         padding: 20px;
         text-align: center;
     }
 
     .three-column .apps h2 {
-        font-size: 2rem; /* Titelgröße anpassen */
+        font-size: 2rem;
     }
 
     .three-column .apps_columns {
-        flex-direction: column; /* Spalten untereinander */
-        gap: 20px; /* Abstand zwischen den Spalten */
+        flex-direction: column;
+        gap: 20px;
     }
 
     .three-column .apps_column {
-        text-align: center; /* Zentriert Inhalte innerhalb der Spalte */
+        text-align: center;
     }
 
     .three-column .apps_column img {
-        max-width: 50px; /* Bildgröße reduzieren */
-        height: auto; /* Proportionen beibehalten */
+        max-width: 50px;
+        height: auto;
     }
 
     .three-column .apps_column h3 {
-        font-size: 1.5rem; /* Schriftgröße der Überschrift anpassen */
+        font-size: 1.5rem;
     }
 
     .three-column .apps_column p {
-        font-size: 1rem; /* Textgröße anpassen */
+        font-size: 1rem;
     }
 
-    /* Kundenbewertungen */
     .client-review .container {
-        text-align: center; /* Zentriert Inhalte */
+        text-align: center;
         padding: 20px;
     }
 
     .client-review h3 {
-        font-size: 1.8rem; /* Titelgröße anpassen */
+        font-size: 1.8rem;
     }
 
     .client-review p {
-        font-size: 1rem; /* Textgröße anpassen */
-        line-height: 1.5; /* Lesbarkeit verbessern */
+        font-size: 1rem;
+        line-height: 1.5;
     }
 }
 
 @media (max-width: 480px) {
-    /* Willkommen-Container */
     .container .content h2 {
-        font-size: 1.5rem; /* Weitere Reduktion der Titelgröße */
+        font-size: 1.5rem;
     }
 
     .container .content p {
-        font-size: 0.9rem; /* Kleinere Textgröße */
+        font-size: 0.9rem;
     }
 
-    /* Drei-Spalten-Bereich */
     .three-column .apps h2 {
-        font-size: 1.5rem; /* Kleinere Titelgröße */
+        font-size: 1.5rem;
     }
 
     .three-column .apps_column img {
-        max-width: 40px; /* Weitere Reduktion der Bildgröße */
+        max-width: 40px;
     }
 
     .three-column .apps_column h3 {
-        font-size: 1.2rem; /* Kleinere Schriftgröße */
+        font-size: 1.2rem;
     }
 
     .three-column .apps_column p {
-        font-size: 0.9rem; /* Kleinere Textgröße */
+        font-size: 0.9rem;
     }
 
-    /* Kundenbewertungen */
     .client-review h3 {
-        font-size: 1.5rem; /* Kleinere Titelgröße */
+        font-size: 1.5rem;
     }
 
     .client-review p {
-        font-size: 0.9rem; /* Kleinere Textgröße */
+        font-size: 0.9rem;
     }
 }
